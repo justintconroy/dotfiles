@@ -1,0 +1,1 @@
+vimperator.vba: call delete('C:/Users/jconroy2/.vim//syntax/vimperator.vim')|call delete('C:/Users/jconroy2/.vim//ftdetect/vimperator.vim')
