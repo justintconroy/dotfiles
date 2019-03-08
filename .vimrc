@@ -2,9 +2,9 @@
 " => Pathogen
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Get the Pathogen stuff out of the way first.
-"filetype off
-"call pathogen#runtime_append_all_bundles()
-"call pathogen#helptags()
+filetype off
+call pathogen#incubate()
+call pathogen#helptags()
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -222,3 +222,7 @@ function! DoPrettyXML()
   exe "set ft=" . l:origft
 endfunction
 command! PrettyXML call DoPrettyXML()
+
+" Enhance a DocuTracker Migration Script to update all tenants.
+"function! EnhanceMigrationScript()
+
