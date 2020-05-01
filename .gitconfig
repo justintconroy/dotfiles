@@ -1,0 +1,32 @@
+[user]
+	name = Justin T. Conroy
+	email = jconroy@koyadocutracker.com
+[alias]
+	# Get the current branch name (not so useful in itself, but used in
+	# other aliases)
+	branch-name = "!git rev-parse --abbrev-ref HEAD"
+	st = status
+	co = checkout
+	ci = commit
+	dev = checkout develop
+	bdel = branch -d
+	ffs = flow feature start
+	frs = flow release start
+	fhs = flow hotfix start
+	fp = flow publish
+	pp = pull --prune
+	pub = !git push -u origin $(git branch-name)
+	conflicts = !gvim $(git diff --name-only | uniq)
+[core]
+	excludesfile = C:/users/jconroy/.gitignore
+	editor = 'C:\\Program Files (x86)\\Vim\\vim74\\gvim.exe' -f -i NONE
+	longpaths = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[winUpdater]
+	recentlySeenVersion = 2.19.0.windows.1
+[diff "utf16"]
+	textconv = "iconv -f utf-16 -t utf-8"
