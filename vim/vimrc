@@ -1,0 +1,47 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vundle
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"set nocompatible
+"filetype off
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
+"Plugin 'VundleVim/Vundle.vim'
+
+" Vim scripts
+"Plugin 'arduino'
+"Plugin 'confluencewiki'
+"Plugin 'wombat'
+"Plugin 'wombat256'
+
+" Github
+"Plugin 'ciaranm/detectindent'
+"Plugin 'preservim/nerdcommenter'
+"Plugin 'qpkorr/vim-renamer'
+"Plugin 'vimperator/vimperator.vim'
+
+
+"call vundle#end()
+"filetype plugin indent on
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Include files
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+runtime general.vim
+runtime ui.vim
+runtime colorsAndFonts.vim
+runtime backups.vim
+runtime indent.vim
+runtime buffersTabsWindows.vim
+runtime statusLine.vim
+runtime whitespace.vim
+runtime spellCheck.vim
+runtime encodings.vim
+runtime paste.vim
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Helper functions
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+runtime bclose.vim
+runtime doPrettyXml.vim
+
