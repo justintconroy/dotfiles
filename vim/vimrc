@@ -1,27 +1,39 @@
+set nocompatible
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vundle
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"set nocompatible
-"filetype off
-"set rtp+=~/.vim/bundle/Vundle.vim
-"call vundle#begin()
-"Plugin 'VundleVim/Vundle.vim'
+" To use any of these on a new system, you'll need to run the
+" PluginInstall command after you open up vim.
+"
+" Important note for Windows:
+" If you launch gvim from a bash shell, PluginInstall won't work.
+" Something in vim doesn't like the shell that's set on that method
+" of starting vim. Starting gvim from a cmd prompt or using vim
+" (instead of gvim) in bash sets a shell that vim likes better, so
+" use one of those when managing plugins.
+filetype off
+set shellslash
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin('~/.vim/bundle')
+Plugin 'VundleVim/Vundle.vim'
 
 " Vim scripts
-"Plugin 'arduino'
-"Plugin 'confluencewiki'
-"Plugin 'wombat'
-"Plugin 'wombat256'
+Plugin 'arduino'
+Plugin 'confluencewiki'
+Plugin 'wombat'
+Plugin 'wombat256'
 
 " Github
-"Plugin 'ciaranm/detectindent'
-"Plugin 'preservim/nerdcommenter'
-"Plugin 'qpkorr/vim-renamer'
-"Plugin 'vimperator/vimperator.vim'
+Plugin 'chrisbra/csv.vim'
+Plugin 'ciaranm/detectindent'
+Plugin 'preservim/nerdcommenter'
+Plugin 'qpkorr/vim-renamer'
+Plugin 'vimperator/vimperator.vim'
 
 
-"call vundle#end()
-"filetype plugin indent on
+call vundle#end()
+filetype plugin indent on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Include files
